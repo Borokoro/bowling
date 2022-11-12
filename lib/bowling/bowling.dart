@@ -11,6 +11,21 @@ class Bowling extends StatefulWidget {
 class _BowlingState extends State<Bowling> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.bottomLeft,
+            end: Alignment.topRight,
+            colors: [
+              Colors.blue,
+              Colors.white,
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
